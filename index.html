@@ -255,6 +255,19 @@ section:nth-child(3n) .card,
  .nas-services .nas-figure{order:1}
  .nas-illustration,.nas-services-visual{min-height:300px}
 }
+
+.feeder-application{
+  background:#e7ebed;
+  border-top:1px solid #c8d1d6;
+}
+.feeder-application .feeder-app-media{
+  background:#e2e6e8;
+  border:1px solid #c9d1d5;
+}
+.nas-fusion-figure{background:#e1e6e8;border-color:#c7d0d4}
+.nas-fusion-figure a{display:block;width:100%;cursor:zoom-in}
+.nas-fusion-figure img{display:block;width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:9px;border:1px solid #cbd3d7;background:#eef0f1}
+.nas-fusion-figure a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 </style></head><body>
 <header><a href="#home" class="logo">RB.<span>ROCH PORTFOLIO</span></a><nav><a href="#home">Home</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#civic">Civic Engagement</a><a href="#skills">Skills</a><a href="#career">Career Plan</a><a href="#mobility">Mobility</a><a href="#contact">Contact</a><a href="#cv">CV / Résumé</a></nav></header>
 <main>
@@ -299,21 +312,12 @@ section:nth-child(3n) .card,
 <article class="case-study"><div class="case-content"><p class="kicker">ALTEO R&amp;D · EXPERIMENTAL RESEARCH</p><h2>Alumina powder characterisation</h2><p>I carried out laboratory measurements and investigated rheological behaviour during my apprenticeship at ALTEO R&amp;D.</p><div class="case-detail"><strong>The challenge</strong><p>Identifying which parameters affected the results and designing meaningful experiments.</p></div><div class="case-detail"><strong>What I gained</strong><p>Rigour in measurement, data interpretation and technical reporting that I still use today.</p></div></div></article></div>
 <article class="case-study nas-showcase" id="nas-project">
   <div class="feeder-row nas-hardware">
-    <figure class="feeder-media nas-figure">
-      <div class="nas-illustration" role="img" aria-label="Diagram of a Raspberry Pi connected to four drive bays, with a RAID setup planned">
-        <div class="nas-graphic-header">MY HOME SERVER</div>
-        <div class="nas-controller">
-          <span class="nas-device-icon" aria-hidden="true">▦</span>
-          <div><strong>Raspberry Pi</strong><small>Main server</small></div>
-          <span class="nas-signal" aria-hidden="true">●</span>
-        </div>
-        <div class="nas-connector" aria-hidden="true"></div>
-        <div class="nas-drives" aria-hidden="true"><span>01</span><span>02</span><span>03</span><span>04</span></div>
-        <p class="nas-diagram-note">Room for four hard drives</p>
-        <span class="nas-diagram-foot">RAID is planned for storage fault tolerance</span>
-      </div>
-      <figcaption>Simple diagram of the NAS setup. Not a screenshot.</figcaption>
-    </figure>
+    <figure class="feeder-media nas-figure nas-fusion-figure">
+  <a href="assets/nas-fusion.png" target="_blank" rel="noopener" aria-label="View the Fusion NAS design at full size">
+    <img src="assets/nas-fusion.png" alt="Fusion screenshot of the NAS enclosure design" loading="lazy">
+  </a>
+  <figcaption>NAS enclosure design in Fusion. Click to view full size.</figcaption>
+</figure>
     <div class="feeder-copy">
       <p class="kicker">PERSONAL PROJECT · RASPBERRY PI</p>
       <h2>NAS</h2>
