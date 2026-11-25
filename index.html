@@ -186,6 +186,75 @@ section .card,section:nth-child(3n) .card,.case-study,.contact-card,.uni{backgro
   .feeder-application .feeder-copy{order:0}
   .feeder-application .feeder-app-media{order:1}
 }
+
+:root{
+  --bg:#e7ecef;
+  --panel:#f0f3f5;
+  --panel-alt:#e4eaed;
+  --line:#c5d0d5;
+  --ink:#26333c;
+  --muted:#52656e;
+  --accent:#2d6e72;
+}
+body{background:#e7ecef}
+main>section,
+main>section#home,
+main>section#about,
+main>section#experience,
+main>section#projects,
+main>section#civic,
+main>section#skills,
+main>section#career,
+main>section#mobility,
+main>section#contact,
+main>section#cv{
+  background:#e7ecef;
+  border-bottom:2px solid #c3ced3;
+  box-shadow:none;
+}
+main>section:nth-child(even){background:#e7ecef}
+section .card,
+section:nth-child(3n) .card,
+.case-study,
+.contact-card,
+.uni,
+.civic-cards .card{background:#f1f4f5;border-color:#c9d4d9;box-shadow:0 4px 16px rgba(33,52,61,.035)}
+.factbox,.highlight{background:#e0e8eb}
+.nas-showcase{margin-top:4px}
+.feeder-hardware,.nas-hardware{background:#ecf1f3}
+.feeder-application,.nas-services{background:#dfe8eb;border-top:1px solid #c4d1d6;align-items:start}
+.feeder-application .feeder-app-media{background:#e3ebef}
+.nas-hardware,.nas-services{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}
+.nas-hardware .feeder-copy,.nas-services .feeder-copy{align-self:start}
+.nas-figure{background:#e3e9ec;padding:clamp(12px,2vw,24px);border:1px solid #c4d1d6;border-radius:13px;align-self:start}
+.nas-illustration,.nas-services-visual{width:100%;max-width:520px;min-height:360px;display:flex;flex-direction:column;align-items:center;justify-content:center;margin:auto;padding:32px 20px;border:1px solid #c7d4da;border-radius:12px;background:#f4f7f8;color:#273a45}
+.nas-graphic-header,.nas-services-caption{font-size:12px;letter-spacing:.17em;font-weight:800;color:#51747c;margin-bottom:22px;text-align:center}
+.nas-controller{width:min(290px,100%);min-height:95px;background:#dce8eb;border:1px solid #b1c8cf;border-radius:13px;display:flex;align-items:center;gap:15px;padding:18px}
+.nas-controller strong,.nas-service-top strong{font-size:19px}
+.nas-controller small,.nas-service-top small,.nas-service-tile small{display:block;font-size:12px;color:#60737d;margin-top:5px}
+.nas-device-icon{width:42px;height:42px;border-radius:9px;background:#c0d8db;color:#2d686e;font-size:29px;display:grid;place-items:center}
+.nas-signal{margin-left:auto;color:#3d8a85;font-size:13px}
+.nas-connector{height:29px;border-left:2px solid #91b3bc}
+.nas-drives{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;width:min(300px,100%)}
+.nas-drives span{display:grid;place-items:center;height:78px;border:1px solid #9fb8c1;border-radius:8px;background:#cfdfe4;color:#365b64;font-size:14px;font-weight:800;position:relative}
+.nas-drives span:after{content:"";position:absolute;bottom:10px;width:30px;height:3px;border-radius:3px;background:#8faeb7}
+.nas-diagram-note{font-size:13px;font-weight:700;margin:17px 0 3px}
+.nas-diagram-foot{font-size:11px;color:#5b7180;text-align:center}
+.nas-service-top{display:flex;flex-direction:column;align-items:center;background:#dce8eb;border:1px solid #b0c9d0;border-radius:12px;padding:17px 25px;min-width:200px}
+.nas-mini-icon{font-size:30px;color:#2f7176}
+.nas-service-branches{height:35px;width:2px;background:#89acb4}
+.nas-service-options{display:grid;grid-template-columns:1fr 1fr;gap:13px;width:100%}
+.nas-service-tile{min-width:0;min-height:136px;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;background:#e2edf0;border:1px solid #b8ced4;border-radius:12px;padding:18px 10px}
+.nas-service-tile strong{font-size:15px}
+.nas-service-glyph{font-size:32px;color:#33747a;line-height:1.2;margin-bottom:8px}
+@media(max-width:850px){
+ .nas-hardware,.nas-services{grid-template-columns:1fr}
+ .nas-hardware .nas-figure{order:0}
+ .nas-hardware .feeder-copy{order:1}
+ .nas-services .feeder-copy{order:0}
+ .nas-services .nas-figure{order:1}
+ .nas-illustration,.nas-services-visual{min-height:300px}
+}
 </style></head><body>
 <header><a href="#home" class="logo">RB.<span>ROCH PORTFOLIO</span></a><nav><a href="#home">Home</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#civic">Civic Engagement</a><a href="#skills">Skills</a><a href="#career">Career Plan</a><a href="#mobility">Mobility</a><a href="#contact">Contact</a><a href="#cv">CV / Résumé</a></nav></header>
 <main>
@@ -228,7 +297,55 @@ section .card,section:nth-child(3n) .card,.case-study,.contact-card,.uni{backgro
 <article class="case-study"><div class="case-content"><p class="kicker">ASCENT INTEGRATION · HMI</p><h2>Industrial operator interfaces</h2><p>I work on Siemens HMI screens and reusable interface components linked to PLC applications.</p><div class="case-detail"><strong>The challenge</strong><p>Making information clear for operators while keeping the application consistent and maintainable.</p></div><div class="case-detail"><strong>What I gained</strong><p>More confidence in TIA Portal and a better understanding of how interface design affects daily operations.</p></div></div></article>
 <article class="case-study"><div class="case-content"><p class="kicker">ELECTRICAL ENGINEERING</p><h2>Electrical machines and motor drives</h2><p>Through coursework and industrial work, I study electrical machines, power converters and Siemens S210 and G120C drives.</p><div class="case-detail"><strong>The challenge</strong><p>Connecting mathematical models and control concepts to measurements and actual motor behaviour.</p></div><div class="case-detail"><strong>What I gained</strong><p>A more systematic approach to testing and a stronger understanding of electrical-machine control.</p></div></div></article>
 <article class="case-study"><div class="case-content"><p class="kicker">ALTEO R&amp;D · EXPERIMENTAL RESEARCH</p><h2>Alumina powder characterisation</h2><p>I carried out laboratory measurements and investigated rheological behaviour during my apprenticeship at ALTEO R&amp;D.</p><div class="case-detail"><strong>The challenge</strong><p>Identifying which parameters affected the results and designing meaningful experiments.</p></div><div class="case-detail"><strong>What I gained</strong><p>Rigour in measurement, data interpretation and technical reporting that I still use today.</p></div></div></article></div>
-<article class="case-study nas-case"><div class="case-content"><p class="kicker">PERSONAL IT PROJECT</p><h2>NAS</h2><p>I built a home server using a Raspberry Pi. It manages my home automation and gives me my own private drive to store and access files.</p><div class="case-detail"><strong>Storage and expansion</strong><p>The system can support up to four hard drives. I want to use a RAID setup to keep the storage running if a drive fails.</p></div><div class="case-detail"><strong>What I learned</strong><p>This project helped me learn more about Linux, networks, personal cloud storage and connecting different home services to one system.</p></div><p class="case-tech">Raspberry Pi · Home automation · Personal cloud · NAS · RAID</p></div></article>
+<article class="case-study nas-showcase" id="nas-project">
+  <div class="feeder-row nas-hardware">
+    <figure class="feeder-media nas-figure">
+      <div class="nas-illustration" role="img" aria-label="Diagram of a Raspberry Pi connected to four drive bays, with a RAID setup planned">
+        <div class="nas-graphic-header">MY HOME SERVER</div>
+        <div class="nas-controller">
+          <span class="nas-device-icon" aria-hidden="true">▦</span>
+          <div><strong>Raspberry Pi</strong><small>Main server</small></div>
+          <span class="nas-signal" aria-hidden="true">●</span>
+        </div>
+        <div class="nas-connector" aria-hidden="true"></div>
+        <div class="nas-drives" aria-hidden="true"><span>01</span><span>02</span><span>03</span><span>04</span></div>
+        <p class="nas-diagram-note">Room for four hard drives</p>
+        <span class="nas-diagram-foot">RAID is planned for storage fault tolerance</span>
+      </div>
+      <figcaption>Simple diagram of the NAS setup. Not a screenshot.</figcaption>
+    </figure>
+    <div class="feeder-copy">
+      <p class="kicker">PERSONAL PROJECT · RASPBERRY PI</p>
+      <h2>NAS</h2>
+      <p>I built a home server using a Raspberry Pi. I use it to manage my smart home and store my files on my own private drive.</p>
+      <div class="case-detail"><strong>The challenge</strong><p>I wanted one small system that could run several services and leave room for more storage. It can support up to four hard drives, and I plan to use RAID to help keep files available if one drive fails.</p></div>
+      <div class="case-detail"><strong>What I learned</strong><p>I learned how to set up a Linux server, work with a local network and manage storage and home services.</p></div>
+      <p class="case-tech">Raspberry Pi · Linux · NAS · Networking · RAID planning</p>
+    </div>
+  </div>
+  <div class="feeder-row nas-services">
+    <div class="feeder-copy">
+      <p class="kicker">SELF-HOSTING · HOME AUTOMATION</p>
+      <h2>One server for my home</h2>
+      <p>The Raspberry Pi brings together two things I use at home: a personal drive for my files and a system that controls my home automation.</p>
+      <div class="case-detail"><strong>Why I built it</strong><p>I wanted more control over my files and home services, without depending on a separate device for everything.</p></div>
+      <div class="case-detail"><strong>What it gave me</strong><p>I became more comfortable setting up services, finding network problems and keeping a system running on my own.</p></div>
+      <p class="case-tech">Home automation · Personal cloud · Self-hosting</p>
+    </div>
+    <figure class="feeder-media nas-figure">
+      <div class="nas-services-visual" role="img" aria-label="Diagram showing one Raspberry Pi server providing personal cloud storage and smart home controls">
+        <div class="nas-services-caption">HOME NETWORK</div>
+        <div class="nas-service-top"><span class="nas-mini-icon" aria-hidden="true">▦</span><strong>Raspberry Pi</strong><small>Local server</small></div>
+        <div class="nas-service-branches" aria-hidden="true"></div>
+        <div class="nas-service-options">
+          <div class="nas-service-tile"><span class="nas-service-glyph" aria-hidden="true">☁</span><strong>Personal drive</strong><small>My own file storage</small></div>
+          <div class="nas-service-tile"><span class="nas-service-glyph" aria-hidden="true">⌂</span><strong>Smart home</strong><small>Home control</small></div>
+        </div>
+      </div>
+      <figcaption>Overview of the services running on my NAS.</figcaption>
+    </figure>
+  </div>
+</article>
 </div></div></section>
 <section id="civic"><div class="container"><p class="kicker">04 / CIVIC ENGAGEMENT</p><h1>Contributing to student life.</h1><p class="lead">I enjoy helping with student clubs and taking part in campus life.</p><div class="grid civic-cards"><article class="card"><p class="kicker">GR’INP · CLIMBING</p><h2>Climbing instructor and treasurer</h2><p>I first trained as a climbing instructor to help other students enjoy climbing. Later, I became the club's treasurer to take on more responsibility.</p><p>I help run climbing sessions and manage membership fees and the club's finances.</p><p><strong>What I learned:</strong> a club works well when people can count on each other.</p><figure class="civic-photo"><img src="assets/grinp-climbing.jpg" alt="Climbing session at the university climbing wall" loading="lazy"><figcaption>Climbing at Gr’INP</figcaption></figure></article><article class="card"><p class="kicker">CAN 7 · STUDENT EVENTS</p><h2>Taking part in campus events</h2><p>I also take part in CAN 7, the school's student events club. I help support events such as student concerts.</p><p><strong>What I enjoy:</strong> meeting new people and taking part in school life outside my classes.</p><figure class="civic-photo"><img src="assets/student-concert.jpg" alt="Student orchestra concert" loading="lazy" onerror="this.closest('figure').style.display='none'"><figcaption>Student concert</figcaption></figure></article></div></div></section>
 <section id="skills"><div class="container"><p class="kicker">05 / SKILLS</p><h1>Tools, methods and experience.</h1><p class="lead">I learned these skills at school, in the lab and during my apprenticeships. I use many of them in real projects.</p><div class="grid"><article class="card"><h3>Automation &amp; supervision</h3><p>Siemens TIA Portal · SCL and LAD · ET200SP PLCs · HMI development · Profinet · Industrial troubleshooting</p></article><article class="card"><h3>Electrical engineering</h3><p>Electrical machines · Power electronics · Motor drives · Instrumentation · Feedback control</p></article><article class="card"><h3>Programming &amp; electronics</h3><p>C/C++ · Python · Microcontrollers · ESP32 · RFID · Sensors and measurement chains</p></article><article class="card"><h3>Engineering approach</h3><p>Testing and validation · Design of experiments · Technical documentation · V-model principles · Teamwork</p></article></div></div></section>
