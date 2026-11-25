@@ -18,6 +18,17 @@ main{padding-top:72px}section{padding:75px clamp(22px,9vw,150px);min-height:70vh
 .uni{border:1px solid var(--line);border-radius:12px;padding:25px;background:#fff;display:flex;flex-direction:column;gap:10px}.uni:first-child{border-color:var(--accent)}.uni ul{padding-left:18px;line-height:1.7;color:#546772}.uni small{font-size:11px;font-weight:800;color:var(--accent)}.uni a{margin-top:auto;color:var(--accent);text-decoration:none;font-weight:700}
 .docs{margin-top:44px}.docs .card{display:flex;flex-direction:column;gap:8px}.docs .card a{color:var(--accent)}.notice{font-size:13px;line-height:1.65;color:#61717b;margin-top:22px}
 @media(max-width:960px){header{position:sticky;flex-direction:column;padding:11px 15px}main{padding-top:0}section{padding-top:55px}.hero-grid{grid-template-columns:1fr;gap:22px}.role{grid-template-columns:1fr;gap:10px}.hero{min-height:auto}}@media(max-width:530px){.logo span{display:none}nav{justify-content:center;gap:5px 13px}.hero h1{font-size:53px}section{padding:46px 24px}}
+
+/* Contact — clearly separated channels */
+.contact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:38px}
+.contact-card{display:flex;flex-direction:column;align-items:flex-start;min-height:312px;padding:30px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 5px 20px rgba(37,50,58,.035);transition:border-color .2s,transform .2s,box-shadow .2s}
+.contact-card:hover{border-color:#94b4b5;transform:translateY(-3px);box-shadow:0 10px 25px rgba(37,50,58,.07)}
+.contact-icon{display:grid;place-items:center;width:45px;height:45px;background:#e8f2f1;border-radius:12px;color:var(--accent);font-size:22px;font-weight:800;margin-bottom:17px}
+.contact-card .kicker{margin:0 0 8px}.contact-card h2{margin:0 0 9px}.contact-card p:not(.kicker){color:var(--muted);line-height:1.65;margin:0 0 20px}
+.contact-address{display:block;max-width:100%;overflow-wrap:anywhere;color:var(--ink);font-weight:650;text-decoration:none;margin-top:auto;margin-bottom:16px}
+.contact-address:hover{color:var(--accent);text-decoration:underline}.contact-action{color:var(--accent);text-decoration:none;font-weight:750;border-bottom:1px solid #9ebcbd;padding-bottom:5px}.contact-action:hover{border-bottom-color:var(--accent)}
+.contact-footer{margin-top:28px;font-size:13px;color:var(--muted)}
+@media(max-width:700px){.contact-grid{grid-template-columns:1fr}.contact-card{min-height:270px;padding:24px}}
 </style></head><body>
 <header><a href="#home" class="logo">RB.<span>ROCH PORTFOLIO</span></a><nav><a href="#home">Home</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#career">Career Plan</a><a href="#mobility">Mobility</a><a href="#contact">Contact</a><a href="#cv">CV / Résumé</a></nav></header>
 <main>
@@ -53,7 +64,24 @@ main{padding-top:72px}section{padding:75px clamp(22px,9vw,150px);min-height:70vh
 <div class="docs"><p class="kicker">MY MOBILITY PROJECT · FR / EN</p><h2>Letters and academic project</h2><p class="intro">These documents explain how the courses I have chosen fit my current apprenticeship and my plans to work in aerospace automation.</p>
 <div class="grid"><article class="card"><h3>Cover letter / Lettre de motivation</h3><p>My motivations for studying at Concordia and how this semester would complement my professional and personal experience.</p><p><a href="documents/cover-letter-en.html" target="_blank" rel="noopener">English ↗</a> · <a href="documents/cover-letter-fr.html" target="_blank" rel="noopener">Français ↗</a></p></article>
 <article class="card"><h3>Study project / Projet de mobilité</h3><p>The specific graduate courses I want to follow in control engineering and electrical machines.</p><p><a href="documents/statement-en.html" target="_blank" rel="noopener">English ↗</a> · <a href="documents/statement-fr.html" target="_blank" rel="noopener">Français ↗</a></p></article></div></div></div></section>
-<section id="contact"><div class="container"><p class="kicker">07 / CONTACT</p><h1>Let's talk.</h1><p class="lead">I am always interested in learning more about industrial automation, electrical engineering and opportunities to work on challenging projects.</p><a class="btn" href="https://www.linkedin.com/in/roch-berquieres-4a8476325" target="_blank" rel="noopener">Find me on LinkedIn ↗</a> <a class="plain-link" href="mailto:roch.berquieres@etu.toulouse-inp.fr">roch.berquieres@etu.toulouse-inp.fr</a></div></section>
+<section id="contact"><div class="container"><p class="kicker">07 / CONTACT</p><h1>Get in touch.</h1><p class="lead">Interested in discussing industrial automation, electrical engineering or a potential project? Feel free to contact me.</p>
+<div class="contact-grid">
+<article class="contact-card">
+<div class="contact-icon" aria-hidden="true">✉</div>
+<p class="kicker">EMAIL</p><h2>Send me a message</h2>
+<p>For professional enquiries, projects or opportunities.</p>
+<a class="contact-address" href="mailto:roch.berquieres@etu.toulouse-inp.fr">roch.berquieres@etu.toulouse-inp.fr</a>
+<a class="contact-action" href="mailto:roch.berquieres@etu.toulouse-inp.fr">Write an email <span aria-hidden="true">↗</span></a>
+</article>
+<article class="contact-card">
+<div class="contact-icon" aria-hidden="true">in</div>
+<p class="kicker">LINKEDIN</p><h2>Connect with me</h2>
+<p>See my background, professional experience and updates.</p>
+<a class="contact-address" href="https://www.linkedin.com/in/roch-berquieres-4a8476325" target="_blank" rel="noopener noreferrer">Roch Berquieres · LinkedIn</a>
+<a class="contact-action" href="https://www.linkedin.com/in/roch-berquieres-4a8476325" target="_blank" rel="noopener noreferrer">View my profile <span aria-hidden="true">↗</span></a>
+</article></div>
+<p class="contact-footer">Based in Toulouse, France · Electrical Engineering &amp; Automation</p>
+</div></section>
 <section id="cv"><div class="container"><p class="kicker">08 / CURRICULUM VITAE</p><h1>My CV.</h1><p class="lead">My original CV is available in French and English. Both versions show only my city and postcode: 31500 Toulouse.</p><div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:24px">
 <article class="card"><h2>Curriculum Vitae · Français</h2><p>Formation en génie électrique, expériences chez Ascent Integration et ALTEO R&amp;D et compétences techniques.</p><iframe title="Aperçu de mon CV français" src="documents/CV_Roch_Berquieres_FR_Toulouse.pdf#toolbar=0&navpanes=0" loading="lazy" style="width:100%;height:560px;border:1px solid #dfe7e9;border-radius:8px;background:#fff"></iframe><a class="btn" href="documents/CV_Roch_Berquieres_FR_Toulouse.pdf" target="_blank" rel="noopener">Ouvrir / Télécharger le CV français ↗</a></article>
 <article class="card"><h2>Engineering Résumé · English</h2><p>My education, work-study experience in automation and electrical engineering skills.</p><iframe title="Preview of my English résumé" src="documents/CV_Roch_Berquieres_EN_Toulouse.pdf#toolbar=0&navpanes=0" loading="lazy" style="width:100%;height:560px;border:1px solid #dfe7e9;border-radius:8px;background:#fff"></iframe><a class="btn" href="documents/CV_Roch_Berquieres_EN_Toulouse.pdf" target="_blank" rel="noopener">Open / Download English résumé ↗</a></article>
