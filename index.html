@@ -163,6 +163,29 @@ section .card,section:nth-child(3n) .card,.case-study,.contact-card,.uni{backgro
 .feeder-app-media img{width:100%;max-width:100%;max-height:none;height:auto;object-fit:contain;display:block;border-radius:12px}
 .croqchat-open:focus-visible{outline:3px solid #28777e;outline-offset:5px}
 @media(max-width:820px){.feeder-application{grid-template-columns:1fr}.feeder-app-media .croqchat-open{max-width:740px}.feeder-app-media img{max-height:none}}
+
+.feeder-application{
+  align-items:start;
+  background:linear-gradient(120deg,#bddcda 0%,#d0e8e4 50%,#c6dfe9 100%);
+  border-top:2px solid #9fc4c9;
+}
+.feeder-application .feeder-copy{
+  align-self:start;
+  padding-top:0;
+}
+.feeder-application .feeder-copy .kicker{margin-top:5px}
+.feeder-application .feeder-app-media{
+  align-self:start;
+  background:#b1d0d8;
+  border:1px solid #a4c6ce;
+  border-radius:14px;
+  padding:12px;
+}
+@media(max-width:820px){
+  .feeder-application{align-items:start}
+  .feeder-application .feeder-copy{order:0}
+  .feeder-application .feeder-app-media{order:1}
+}
 </style></head><body>
 <header><a href="#home" class="logo">RB.<span>ROCH PORTFOLIO</span></a><nav><a href="#home">Home</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#civic">Civic Engagement</a><a href="#skills">Skills</a><a href="#career">Career Plan</a><a href="#mobility">Mobility</a><a href="#contact">Contact</a><a href="#cv">CV / Résumé</a></nav></header>
 <main>
