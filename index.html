@@ -268,6 +268,31 @@ section:nth-child(3n) .card,
 .nas-fusion-figure a{display:block;width:100%;cursor:zoom-in}
 .nas-fusion-figure img{display:block;width:100%;height:auto;max-height:480px;object-fit:contain;border-radius:9px;border:1px solid #cbd3d7;background:#eef0f1}
 .nas-fusion-figure a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+:root{--bg:#e7ecef;--panel:#f6f8f9;--line:#c4d0d5;--ink:#23313a;--accent:#286a6d;--muted:#526671}
+body{background:#e7ecef}
+header{background:rgba(246,248,249,.97);border-bottom:1px solid #bdcdd2;box-shadow:0 4px 22px rgba(30,52,62,.05)}
+nav a{transition:color .2s,border-color .2s;font-weight:600}
+nav a.active{color:#235c61;border-bottom:3px solid #286a6d}
+main>section,main>section#home,main>section#about,main>section#experience,main>section#projects,main>section#civic,main>section#skills,main>section#career,main>section#mobility,main>section#contact,main>section#cv{background:#e7ecef}
+main>section:nth-child(2n){background:#ebeff1}
+main>section{border-bottom:1px solid #c3cfd4;box-shadow:none;padding-top:clamp(65px,6vw,98px);padding-bottom:clamp(70px,7vw,105px)}
+.container{max-width:1130px}
+section .kicker{letter-spacing:.14em;color:#286a6d}
+section h1{letter-spacing:-.048em}
+section .container>h1:after{content:"";display:block;width:56px;height:4px;border-radius:2px;background:#347b7c;margin-top:24px}
+section .container>.lead{max-width:820px;color:#4d616d;line-height:1.66}
+section .card,section:nth-child(3n) .card,.case-study,.contact-card,.uni,.civic-cards .card{background:#f7f9fa;border:1px solid #c6d3d8;box-shadow:0 9px 24px rgba(35,54,62,.045);border-radius:14px}
+section .card,section:nth-child(3n) .card,.contact-card,.uni{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+@media(hover:hover){section .card:hover,.contact-card:hover,.uni:hover{transform:translateY(-3px);border-color:#9abcc0;box-shadow:0 16px 29px rgba(35,54,62,.075)}}
+.btn{background:#286a6d;box-shadow:0 5px 14px rgba(40,106,109,.15);transition:transform .2s,background .2s}.btn:hover{background:#215b5f;transform:translateY(-2px)}
+.factbox{background:#e0e8eb;border-color:#bcccd2}
+.role{border-top:1px solid #c0cfd4}.step{border-bottom:1px solid #cbd6da}
+.feeder-hardware,.nas-hardware{background:#edf1f2}
+.feeder-application,.nas-services{background:#e2e9ec}
+.feeder-application .feeder-app-media,.nas-figure{background:#e5ebed}
+.photo-story img,.outdoor-photos img{box-shadow:0 7px 19px rgba(31,50,60,.08)}
+@media(max-width:700px){main>section{padding-top:56px;padding-bottom:65px}.hero-grid{gap:28px}}
 </style></head><body>
 <header><a href="#home" class="logo">RB.<span>ROCH PORTFOLIO</span></a><nav><a href="#home">Home</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#civic">Civic Engagement</a><a href="#skills">Skills</a><a href="#career">Career Plan</a><a href="#mobility">Mobility</a><a href="#contact">Contact</a><a href="#cv">CV / Résumé</a></nav></header>
 <main>
