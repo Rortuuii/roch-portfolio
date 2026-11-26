@@ -27,10 +27,23 @@ section{padding:63px 0 13px;border-bottom:1px solid #c5d1d5}.section-intro{color
 .notice{border-left:3px solid var(--accent);padding:13px 17px;background:#dce8e9;color:#3c5861;line-height:1.65;border-radius:0 8px 8px 0;margin:35px 0 0}
 footer{font-size:12px;color:var(--muted);padding:38px 0 5px;text-align:center}
 @media(max-width:720px){nav{align-items:flex-start;flex-direction:column;gap:10px}.navlinks{gap:10px 19px}.slide-grid,.docs-grid{grid-template-columns:1fr}main{padding:33px 19px 65px}section{padding-top:46px}.poster-preview{padding:8px}}
+
+/* Shared portfolio header: same navigation and labels as the home page */
+body{padding-top:72px}
+header{position:fixed;top:0;left:0;right:0;z-index:30;min-height:72px;padding:12px 5vw;display:flex;align-items:center;justify-content:space-between;gap:18px;background:rgba(246,248,249,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+header .logo{font-size:23px;font-weight:800;text-decoration:none;color:var(--ink);white-space:nowrap;letter-spacing:normal}
+header .logo span{font-size:10px;letter-spacing:.08em;color:var(--muted);margin-left:8px;padding-left:0}
+header nav{display:flex;gap:clamp(7px,1.25vw,21px);flex-wrap:wrap;max-width:none;margin:0;min-height:0;padding:0;align-items:center;justify-content:flex-start}
+header nav a{font-size:12px;font-weight:600;text-decoration:none;color:#53616a;padding:6px 0;border-bottom:2px solid transparent;white-space:nowrap}
+header nav a:hover,header nav a.active{color:var(--accent);border-color:var(--accent)}
+header nav a.active{font-weight:750}
+header nav a:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:2px}
+@media(max-width:960px){body{padding-top:0}header{position:sticky;flex-direction:column;padding:11px 15px;gap:10px}header nav{justify-content:center;gap:5px 13px}}
+@media(max-width:530px){header .logo span{display:none}header nav{justify-content:center;gap:5px 13px}}
 </style>
 </head>
 <body>
-<header><nav><a class="brand" href="index.html#home">RB.<span>ROCH PORTFOLIO</span></a><div class="navlinks"><a href="index.html#home">Home</a><a href="index.html#projects">Projects</a><a href="index.html#civic">Civic Engagement</a><a href="cep.html" aria-current="page">CEP</a><a href="index.html#mobility">Mobility</a><a href="index.html#cv">CV</a></div></nav></header>
+<header><a href="index.html#home" class="logo">RB.<span>ROCH PORTFOLIO</span></a><nav><a href="#home">Home</a><a href="index.html#about">About</a><a href="index.html#experience">Experience</a><a href="index.html#projects">Projects</a><a href="index.html#civic">Civic Engagement</a><a href="index.html#skills">Skills</a><a href="cep.html" class="active" aria-current="page">CEP</a><a href="index.html#mobility">Mobility</a><a href="index.html#contact">Contact</a><a href="index.html#cv">CV / Résumé</a></nav></header>
 <main>
 <div class="top"><p class="eyebrow">ENSEEIHT · CAREERS &amp; MANAGEMENT · 2026</p><h1>My Career Evolution Plan.</h1><p class="lead">I am learning to work as an automation engineer at Ascent Integration. My long-term goal is to manage automation projects in the aerospace industry. This page brings together my plan, my CAM presentation and my mobility documents.</p><div class="buttons"><a class="btn" href="#presentation">View my 5 slides</a><a class="btn secondary" href="#poster">See my poster</a><a class="btn secondary" href="#documents">Application documents</a></div></div>
 <section id="poster"><p class="eyebrow">01 / CAREER POSTER</p><h2>My career at a glance</h2><p class="section-intro">From measurement and testing to industrial automation, then project management. This poster shows the steps I want to take and the values behind my choices.</p><div class="poster-preview"><a href="documents/CEP_Poster_Roch_Berquieres_2026.pdf" target="_blank" rel="noopener" title="Open poster PDF"><img src="assets/cep-poster.webp" alt="Career Evolution Plan poster with current experience, professional steps and values"></a></div><div class="download-row"><a class="btn secondary" href="documents/CEP_Poster_Roch_Berquieres_2026.pdf" target="_blank" rel="noopener">View / Download poster (PDF)</a></div></section>
